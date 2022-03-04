@@ -18,7 +18,7 @@
             
         </div>
         <div v-if="!first" style="display:flex;width:100%;justify-content:center;align-items:center;font-weight:bold;">
-          <p style="color:#fff;display:flex;width:100%;justify-content:center;align-items:center;">Inizia la tua esperienza con <img src="img/logo-recrowd.svg" alt="" style="height:30px;">
+          <p style="color:#fff;display:flex;width:100%;justify-content:center;align-items:center;">Inizia la tua esperienza con <img src="img/logo-recrowd.svg" alt="" style="height:30px;margin:0 15px;">
           CLICCA su ATTIVA ORA</p>
         </div>
          <div v-if="second" style="display:flex;width:100%;justify-content:center;align-items:center;font-weight:bold;">
@@ -49,10 +49,11 @@
                   </div>
                 </form>
               </div>
-              <button class="btn">COMPLETA</button>
+              <button class="btn" @click="completa()">COMPLETA</button>
               
             </div>
         </div>
+      
         
         <div style="padding:10px 20px;position:absolute;bottom:0;right:0;left:0;">
           <div id="lineafollow"></div>
@@ -63,6 +64,14 @@
            
           </ul>
         </div>
+      </div>
+        <div v-if="finish">
+           <h1 style="color:#22AB6E;">TRANSAZIONE COMPLETATA!</h1>
+        </div>
+    </div>
+    <div style="margin-top:20px;">
+      <div>
+        <h1>Ciao, Ciro Tartaglia</h1>
       </div>
     </div>
   </div>
@@ -237,6 +246,7 @@ export default {
              errormess:false,
              first:false,
              second:false,
+             finish:false
              
      
     }
@@ -247,6 +257,12 @@ export default {
         this.first=true;
         const linea1 = document.querySelector('#containerprincipe')
           linea1.style.height='450px';
+               
+     },
+      completa() {
+      this.finish=true;
+        const linea1 = document.querySelector('#containerprincipe')
+          linea1.style.display='none';
                
      },
      click(){
