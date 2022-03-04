@@ -3,7 +3,7 @@
     <div>
       <h3>COMPLETA  LA TUA REGISTRAZIONE</h3>
       <p style="margin:15px 0;">Per abilitare le funzioni di investimento e poter ricevere il denaro è necessario completare la tua iscrizione inserendo informazioni aggiuntive. Premi l'icona "?" per visualizzare i dati ed i documenti necessari per completare la registrazione.</p>
-      <div style="border:1px solid black;width:100%;height:400px;position:relative;background-color:#8EDCF4;padding:10px 20px;">
+      <div style="border:1px solid black;width:100%;height:650px;position:relative;background-color:#8EDCF4;padding:10px 20px;">
          <div v-if="errormess" style="text-align:center;color:red;font-weight:bold;">Compila tutti i campi !</div>
         <div v-if="openform" id="form">
             <input type="text" placeholder="Nome *" v-model="message" value="">
@@ -17,13 +17,49 @@
             <button @click="click()" style="width:340px;margin-left:calc(50% - 170px);border:1px solid black;">COMPILA TUTTI I FORM E CLICCA QUI</button>
             
         </div>
+        <div v-if="!first" style="display:flex;width:100%;justify-content:center;align-items:center;font-weight:bold;">
+          <p>Inizia la tua esperienza con RECROWD 
+          CLICCA su ATTIVA ORA</p>
+        </div>
+         <div v-if="second" style="display:flex;width:100%;justify-content:center;align-items:center;font-weight:bold;">
+        <div class="payment">
+              <div class="bg"></div>
+              <div class="card">
+                <img src="img/chip.png" class="chip">
+                <div class="logo"></div>
+                <h2 class="bankName" contenteditable="true"> </h2>
+                <form>
+                  <div class="inputBox">
+                    <span>Card No.</span>
+                    <input type="text" placeholder="0123 4567 8901 2345" maxlength="19">
+                  </div>
+                  <div class="inputBox">
+                    <span>Card Holder</span>
+                    <input type="text" :placeholder="message">
+                  </div>
+                  <div class="group">
+                    <div class="inputBox">
+                      <span>Valid Thru</span>
+                      <input type="text" placeholder="MM/YY" maxlength="5">
+                    </div>
+                    <div class="inputBox">
+                      <span>CCV</span>
+                      <input type="password" placeholder="***" maxlength="4">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <button class="btn">COMPLETA</button>
+              
+            </div>
+        </div>
         
         <div style="padding:10px 20px;position:absolute;bottom:0;right:0;left:0;">
           <div id="lineafollow"></div>
           <ul style="display:flex;justify-content:space-between;" class="cost-casa">
             <li><button>ABILITATO</button></li>
             <li><button @click="dateRangeText()">ATTIVA ORA</button></li>
-            <li><button>COMPLETA</button></li>
+            
            
           </ul>
         </div>
@@ -32,11 +68,140 @@
   </div>
 </template>
 <style scoped>
+.payment
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0px;
+	transform: translateY(-63px);
+	transition: 0.5s;
+}
+.payment:hover
+{
+	padding: 40px;
+	transform: translateY(0);
+}
+.payment .bg
+{
+	position: absolute;
+	bottom: 0;
+	height: 70%;
+	width: 100%;
+	border-radius: 25px;
+	background: linear-gradient(225deg,#2196f3,#ff4efd);
+}
+.payment .card
+{
+	position: relative;
+	width: 580px;
+	height: 350px;
+	background: #fcfcfc;
+	border-radius: 15px;
+	padding: 40px;
+	box-shadow: 6px 6px 12px rgba(0,0,0,0.05);
+	z-index: 1000;
+	overflow: hidden;
+	transform: translateY(127px);
+	transition: 0.5s;
+}
+.payment:hover .card
+{
+	transform: translateY(0);
+}
+.payment .card::before
+{
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: -20%;
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	background: linear-gradient(to bottom,rgba(0,0,0,0.05),transparent);
+	pointer-events: none;
+}
+.chip
+{
+	position: absolute;
+	max-width: 70px;
+}
+.logo
+{
+	position: absolute;
+	top: 130px;
+	right: 40px;
+	width: 60px;
+	height: 60px;
+	background: #ea222c;
+	border-radius: 50%;
+	box-shadow: -40px 0 0 rgba(255,164,36,0.5);
+}
+.bankName
+{
+	color: #999;
+	text-align: end;
+	outline: none;
+	width: 100%;
+	font-size: 1.5em;
+}
+form
+{
+	margin-top: 45px;
+}
+.inputBox
+{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+.inputBox span
+{
+	color: #089cff;
+	font-size: 1.1em;
+}
+.inputBox input 
+{
+	border: none;
+	outline: none;
+	background: transparent;
+	font-size: 1.8em;
+	color: #333;
+	font-family: 'Share Tech Mono', monospace;
+}
+.group
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.group .inputBox:last-child
+{
+	max-width: 60px;
+}
+.btn
+{
+	position: relative;
+	margin-top: 40px;
+	padding: 15px 20px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	background: #fff;
+	color: #333;
+	font-size: 1.5em;
+	cursor: pointer;
+	box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
+}
 #lineafollow{
-  width:10px;
+  width:85px;
   height:8px;
   background-color:#fff;
-  border:1px solid red;
+  border:1px solid rgb(21, 0, 255);
+  border-radius: 5px;
 }
 #form input{
   width:calc(40% - 20px);
@@ -64,24 +229,28 @@ export default {
            message5: null,
             message6: null,
              message7: null,
-             errormess:false
+             errormess:false,
+             first:false,
+             second:false
              
      
     }
   },
    methods:{
      dateRangeText() {
-       this.openform=true
-       
+       this.openform=true;
+        this.first=true;
      
                
      },
      click(){
+      
        if(this.message && this.message1 && this.message2 && this.message3 && this.message4 && this.message5 && this.message6 && this.message7){
           this.openform=false
           this.errormess= false 
           const linea = document.querySelector('#lineafollow')
-          linea.style.width='50%';
+          linea.style.width='100%';
+           this.second=true;
        }else{
         this.errormess= true   
        }
