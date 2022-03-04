@@ -3,9 +3,9 @@
     <div>
       <h3>COMPLETA  LA TUA REGISTRAZIONE</h3>
       <p style="margin:15px 0;">Per abilitare le funzioni di investimento e poter ricevere il denaro è necessario completare la tua iscrizione inserendo informazioni aggiuntive. Premi l'icona "?" per visualizzare i dati ed i documenti necessari per completare la registrazione.</p>
-      <div style="border:1px solid black;width:100%;height:650px;position:relative;background-color:#8EDCF4;padding:10px 20px;">
+      <div style="" id="containerprincipe">
          <div v-if="errormess" style="text-align:center;color:red;font-weight:bold;">Compila tutti i campi !</div>
-        <div v-if="openform" id="form">
+        <div v-if="openform" id="form" style="margin-bottom:100px;">
             <input type="text" placeholder="Nome *" v-model="message" value="">
             <input type="text" v-model="message1" value="" placeholder="Cognome *">
             <input type="text" v-model="message2" value="" placeholder="Eta' *">
@@ -18,7 +18,7 @@
             
         </div>
         <div v-if="!first" style="display:flex;width:100%;justify-content:center;align-items:center;font-weight:bold;">
-          <p>Inizia la tua esperienza con RECROWD 
+          <p style="color:#fff;display:flex;width:100%;justify-content:center;align-items:center;">Inizia la tua esperienza con <img src="img/logo-recrowd.svg" alt="" style="height:30px;">
           CLICCA su ATTIVA ORA</p>
         </div>
          <div v-if="second" style="display:flex;width:100%;justify-content:center;align-items:center;font-weight:bold;">
@@ -68,6 +68,11 @@
   </div>
 </template>
 <style scoped>
+#containerprincipe{
+  /* height:650px; */
+  /* height:150px; */
+  border:1px solid black;width:100%;position:relative;background-color:#8EDCF4;padding:20px 30px;
+}
 .payment
 {
 	position: relative;
@@ -231,7 +236,7 @@ export default {
              message7: null,
              errormess:false,
              first:false,
-             second:false
+             second:false,
              
      
     }
@@ -240,11 +245,14 @@ export default {
      dateRangeText() {
        this.openform=true;
         this.first=true;
-     
+        const linea1 = document.querySelector('#containerprincipe')
+          linea1.style.height='450px';
                
      },
      click(){
-      
+        const linea1 = document.querySelector('#containerprincipe')
+          linea1.style.height='650px';
+           
        if(this.message && this.message1 && this.message2 && this.message3 && this.message4 && this.message5 && this.message6 && this.message7){
           this.openform=false
           this.errormess= false 
