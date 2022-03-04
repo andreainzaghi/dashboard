@@ -42,13 +42,33 @@
         <div style="display:flex;width:20%;margin:0 2% 0 0;">
             <TheNavbar/>
         </div>
-        <div style="display:flex;width:72%;margin:0 2%;padding:20px;">
+        <div style="display:flex;width:72%;margin:0 2%;padding:20px;overflow:scroll;">
             <Nuxt />
-        </div>
+         </div>
       </div>
    </div> 
 </template>
 <style scoped>
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px rgb(255, 255, 255); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255); 
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff; 
+}
 *{
 font-family: 'Outfit', sans-serif;
 font-family: 'Poppins', sans-serif;
