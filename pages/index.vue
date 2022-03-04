@@ -17,7 +17,9 @@
             <button @click="click()" style="width:340px;margin-left:calc(50% - 170px);border:1px solid black;">COMPILA TUTTI I FORM E CLICCA QUI</button>
             
         </div>
+        
         <div style="padding:10px 20px;position:absolute;bottom:0;right:0;left:0;">
+          <div id="lineafollow"></div>
           <ul style="display:flex;justify-content:space-between;" class="cost-casa">
             <li><button>ABILITATO</button></li>
             <li><button @click="dateRangeText()">ATTIVA ORA</button></li>
@@ -30,6 +32,12 @@
   </div>
 </template>
 <style scoped>
+#lineafollow{
+  width:10px;
+  height:8px;
+  background-color:#fff;
+  border:1px solid red;
+}
 #form input{
   width:calc(40% - 20px);
   margin:10px 5%;
@@ -71,6 +79,9 @@ export default {
      click(){
        if(this.message && this.message1 && this.message2 && this.message3 && this.message4 && this.message5 && this.message6 && this.message7){
           this.openform=false
+          this.errormess= false 
+          const linea = document.querySelector('#lineafollow')
+          linea.style.width='50%';
        }else{
         this.errormess= true   
        }
