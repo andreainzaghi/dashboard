@@ -3,7 +3,7 @@
 <h2>IL TUO CONTO VIRTUALE</h2>
     <div style="display:flex;width:100%;justify-content:space-around;align-items:center;" >
         
-        <div id="inv">
+        <div id="inv" @click="ContoVirtuale1()" >
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" version="1.1" class="svg card-title replaced-svg">
                     <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
@@ -21,7 +21,7 @@
              <p>Tramite Carta di Credito o Bonifico</p></div>
 
         </div>
-         <div id="inv">
+         <div id="inv" @click="ContoVirtuale1()" >
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" version="1.1" class="svg card-title replaced-svg">
                     <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
@@ -45,8 +45,49 @@
     <div style="background-color:#E2E2E2;padding:30px;border-radius:10px;margin-top:20px;">
         <p> Ultimi Movimenti</p>
     </div>
+    <div v-if="openform" style="background-color:#E2E2E2;padding:30px;border-radius:10px;margin-top:20px;border:2px dashed  grey;">
+       
+         <div style="display:flex;justify-content:space-between;align.items:center;">
+              <div>CONTO VIRTUALE CLIENTE NON ABILITATO</div>
+              <div @click="ContoVirtuale2()" style="width:55px;border:1px solid grey;padding:10px;">EXIT</div>
+          </div>
+          <div>
+              Per poter abilitare il tuo conto virtuale è necessario caricare il documento d’identità tramite la tua Dashboard
+          </div>
+           <div @click="ContoVirtuale2()" style="width:90px;border:1px solid grey;padding:10px;">ANNULLA</div>
+    </div>
+    
     </div>
 </template>
+<script>
+export default {
+ 
+  data () {
+    return {
+      openform: false,
+    
+ 
+             
+     
+    }
+  },
+   methods:{
+   
+     ContoVirtuale1(){
+       this.openform=true;
+       
+       
+     },
+      ContoVirtuale2(){
+      
+        this.openform=false;
+        
+       
+     },
+   
+    }
+}
+</script>
 <style scoped>
 #inv div{
     color:#fff;
