@@ -79,7 +79,14 @@
           </div>
           <NuxtLink to="/impostazioni" prefetchLinks id="link"><p class="linkcactivelass">impostazioni</p></NuxtLink>
         </li>
+        <li>
+          <Prova greeting-message="hello" />
+        </li>
+        <li >
+      <video src="video/house.mp4" style="width:100%;" id="video"></video>
+    </li>
     </ul>
+    
 
 
 </nav>
@@ -137,3 +144,32 @@ ul li div{
 }
 
 </style>
+<script>
+export default {
+  data () {
+    return {
+
+     
+    }
+  },
+   mounted(){
+ 
+
+        const video = document.querySelector('#video');
+        
+        let x = 0
+        window.addEventListener('wheel',function(){
+            let y = event.deltaY;
+            if (y > 0) {
+                x += 0.5
+            } else {
+                x -= 0.5
+            }
+            video.currentTime=x
+            console.log(video.currentTime)
+        })
+    
+    
+    }
+}
+</script>

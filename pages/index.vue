@@ -14,7 +14,7 @@
             <input type="text" v-model="message5" value="" placeholder="Codice Fiscale *">
             <input type="text" v-model="message6" value="" placeholder="Citta' *">
             <input type="text" v-model="message7" value="" placeholder="Indirizzo *">
-            <button @click="click()" style="width:340px;margin-left:calc(50% - 170px);border:1px solid black;padding:10px;border-radius:5px;">COMPILA TUTTI I FORM E CLICCA QUI</button>
+            <button @click="click()" style="width:340px;margin-left:calc(50% - 170px);border:1px solid grey;padding:10px;border-radius:5px;margin-top:10px;">COMPILA TUTTI I FORM E CLICCA QUI</button>
             
         </div>
         <div v-if="!first" style="display:flex;width:100%;justify-content:center;align-items:center;font-weight:bold;">
@@ -247,8 +247,8 @@ form
   height:50px;
   background-color: #fff;
   padding:5px 10px;
-  border-radius:10px;
-  border:1px solid black;
+  border-radius:60px;
+  border:1px solid rgb(85, 85, 85);
 }
 button{
   color:black;
@@ -256,6 +256,7 @@ button{
 </style>
 <script>
 export default {
+ 
   data () {
     return {
       openform: false,
