@@ -112,7 +112,7 @@
 }
 #line3:hover{
   border-bottom: 1px solid #fff;
-   background-color:#23cd81;
+   background-color:#22AB6E;
 }
 svg{
   width:20px;
@@ -181,25 +181,25 @@ export default {
        const navbar = document.querySelector('#navbar')
       changebackground.addEventListener("click", function() {
       navbar.style.backgroundImage = "url('/img/oranghome.png')";
-      navbar.style.backgroundColor  = "orange";
+      navbar.style.backgroundColor  = "#F48939";
       });
         const changebackground1 = document.querySelector('#line1')
        const navbar1 = document.querySelector('#navbar')
       changebackground1.addEventListener("click", function() {
       navbar1.style.backgroundImage = "url('/img/bluehome.png')";
-       navbar.style.backgroundColor  = "lightblue";
+       navbar.style.backgroundColor  = "#8EDCF4";
       });
         const changebackground2 = document.querySelector('#line2')
        const navbar2 = document.querySelector('#navbar')
       changebackground2.addEventListener("click", function() {
       navbar2.style.backgroundImage = "url('/img/greyhome.png')";
-          navbar.style.backgroundColor  = "lightgrey";
+          navbar.style.backgroundColor  = "#DBDBDB";
       });
         const changebackground3 = document.querySelector('#line3')
        const navbar3 = document.querySelector('#navbar')
       changebackground3.addEventListener("click", function() {
       navbar3.style.backgroundImage = "url('/img/casgreen.png')";
-      navbar.style.backgroundColor  = "green";
+      navbar.style.backgroundColor  = "#22AB6E";
       });
       // for (var i=0; i < changebackground.length; i++) {
       //     changebackground[i].onclick = function(){
