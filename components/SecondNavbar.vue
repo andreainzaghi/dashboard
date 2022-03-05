@@ -75,15 +75,15 @@ svg{
 }
 #ddffgg:nth-child(2){
 
-  background-color:#8EDCF4;
+  background-color:#f48a39;
    background-image:url('/img/weed.png');
-  background-position-x:190px;
+  background-position-x:220px;
   background-position-y:-10px;
    background-size: 230px;
 }
 #ddffgg:nth-child(3){
 
-  background-color:#DA3A51;
+  background-color:#f48a39;
    background-image:url('/img/moneyrain.png');
   background-position-x:60px;
   background-position-y:5px;

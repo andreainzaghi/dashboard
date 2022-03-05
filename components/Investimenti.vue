@@ -4,13 +4,13 @@
     <div style="display:flex;width:100%;justify-content:space-around;align-items:center;" >
         
         <div id="inv">
-            <div><h3>Progetti</h3></div>
+            <div><h3>PROGETTI</h3></div>
             <div><p>0 Finanziamenti</p>
              <p>0 Chiusi</p></div>
 
         </div>
          <div id="inv">
-            <div><h3>Rendimento medio</h3></div>
+            <div><h3>RENDIMENTO MEDIO</h3></div>
             <div><p>0.00 %</p><p>Rendimento medio dei tuoi investimenti</p></div>
             
 
@@ -22,13 +22,17 @@
     </div>
 </template>
 <style scoped>
+#inv div{
+    color:#fff;
+    text-shadow:1px 1px 1px grey;
+}
 #inv:nth-child(1) {
     padding:20px;
     width:48%;
     margin:1% 1% 0 0;
     border-radius:10px;
     height:150px;
-    background-color:#F48939;
+    background-color:#8EDCF4;
       background-image:url('/img/home.png');
   background-position-x:270px;
   background-position-y:-55px;

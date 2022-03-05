@@ -79,12 +79,12 @@
           </div>
           <NuxtLink to="/impostazioni" prefetchLinks id="link"><p class="linkcactivelass">impostazioni</p></NuxtLink>
         </li>
-        <li>
+        <!-- <li>
           <Prova greeting-message="hello" />
-        </li>
-        <li >
-      <video src="video/house.mp4" style="width:100%;" id="video"></video>
-    </li>
+        </li> -->
+        <!-- <li >
+      <video src="video/home.mp4" style="width:100%;"  autoplay loop ></video>
+    </li> -->
     </ul>
     
 
@@ -129,9 +129,11 @@ svg{
    display:flex;
    padding:5px;
   
+  
 }
 ul li div{
   text-align: center;
+  
 }
 .nuxt-link-active {
   font-weight: bold;
