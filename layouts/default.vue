@@ -45,7 +45,11 @@
         <div style="display:flex;width:72%;margin:0 2%;padding:20px;overflow:scroll;">
             <Nuxt />
          </div>
+        
       </div>
+       <div style="width:100%;">
+           <Footer/>
+         </div>
    </div> 
 </template>
 <style scoped>

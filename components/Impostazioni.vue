@@ -38,6 +38,9 @@
                 <input type="checkbox" ><span style="">Ho preso visione dell'Informativa sul trattamento dei dati personali (Finalità a - b)</span>
             </div>
          </div>
+         <div style="width:100%;"> 
+             <button  style="width:88%;margin-left: 6%;height:50px;margin-top:50px;background-color:blue;color:#fff;border-radius:50px;border:2px solid #fff;">CAMBIA IMPOSTAZIONI</button>
+         </div>
      
       
      
