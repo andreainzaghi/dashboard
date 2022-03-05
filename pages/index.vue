@@ -18,7 +18,7 @@
             
         </div>
         <div v-if="!first" style="display:flex;width:100%;justify-content:center;align-items:center;font-weight:bold;">
-          <p style="color:#fff;display:flex;width:100%;justify-content:center;align-items:center;text-shadow:1px 1px 1px grey;">Inizia la tua esperienza con <img src="img/logo-recrowd.svg" alt="" style="height:30px;margin:0 15px;">
+          <p style="color:#fff;display:flex;width:100%;justify-content:center;align-items:center;text-shadow:1px 1px 1px black;">Inizia la tua esperienza con <img src="img/logo-recrowd.svg" alt="" style="height:30px;margin:0 15px;">
           CLICCA su ATTIVA ORA</p>
         </div>
          <div v-if="second" style="display:flex;width:100%;justify-content:center;align-items:center;font-weight:bold;">
@@ -82,6 +82,8 @@
 #linky{
  color:rgb(0, 0, 0);
   text-decoration: none;
+  border:2px solid rgb(255, 255, 255);
+  padding:5px 17px;border-radius:20px;
 }
 #ddffgg{
   padding:20px;
@@ -94,6 +96,14 @@
   /* height:650px; */
   /* height:150px; */
  width:100%;position:relative;background-color:#e2e2e2;padding:20px 30px;border-radius:10px;
+ 
+  animation: myfirst 1s linear 0.5s infinite alternate;
+}
+
+@keyframes myfirst {
+  0%   {border:1px solid rgb(0, 0, 0);}
+ 
+  100% {border:1px solid rgb(255, 255, 255);}
 }
 .payment
 {
@@ -118,7 +128,7 @@
 	height: 70%;
 	width: 100%;
 	border-radius: 25px;
-	background: linear-gradient(225deg,#22AB6E,#F48939);
+	background: linear-gradient(225deg,#ea222cc3,#FED090);
 }
 .payment .card
 {
@@ -225,9 +235,9 @@ form
 }
 #lineafollow{
   width:85px;
-  height:8px;
-  background-color:#fff;
-  border:1px solid rgb(255, 89, 0);
+  height:6px;
+  background-color:rgb(0, 0, 0);
+  border:2px solid rgb(255, 255, 255);
   transition: 3s;
   border-radius: 5px;
 }
