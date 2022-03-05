@@ -1,6 +1,6 @@
 <template>
    <div>
-     <div>
+     <div style="border-bottom:1px solid lightgrey;">
        <ul style="padding:5px;display:flex;justify-content:space-around;align-items:center;">
          <li><img src="img/logo-recrowd.svg" alt="" style="height:50px;"></li>
          <li>INVESTI</li>

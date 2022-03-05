@@ -4,8 +4,8 @@
       <h3>COMPLETA  LA TUA REGISTRAZIONE</h3>
       <p style="margin:15px 0;">Per abilitare le funzioni di investimento e poter ricevere il denaro è necessario completare la tua iscrizione inserendo informazioni aggiuntive. Premi ATTIVA ORA per visualizzare i dati ed i documenti necessari per completare la registrazione.</p>
       <div style="" id="containerprincipe">
-         <div v-if="errormess" style="text-align:center;color:red;font-weight:bold;">Compila tutti i campi !</div>
-        <div v-if="openform" id="form" style="margin-bottom:100px;">
+         <div v-if="errormess" style="text-align:center;color:red;font-weight:bold;">Compila perfavore tutti i campi !</div>
+        <div v-if="openform" id="form" style="margin-bottom:100px;background-image:url('/img/dots1.png');   background-size: cover;">
             <input type="text" placeholder="Nome *" v-model="message" value="">
             <input type="text" v-model="message1" value="" placeholder="Cognome *">
             <input type="text" v-model="message2" value="" placeholder="Eta' *">
