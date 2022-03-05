@@ -1,7 +1,7 @@
 <template>
     <nav id="navbar">
     <ul>
-        <li>
+        <li id="line">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" version="1.1" class="svg replaced-svg">
                 <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
@@ -19,7 +19,7 @@
             <NuxtLink to="/" prefetchLinks id="link"><p class="linkcactivelass">dashboard</p> </NuxtLink>
         
           </li>
-        <li>
+        <li id="line">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" version="1.1" class="svg replaced-svg">
                   <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
@@ -37,7 +37,7 @@
           </div>
           <NuxtLink to="/impostazioni" prefetchLinks id="link"><p class="linkcactivelass">impostazioni</p></NuxtLink>
         </li>
-        <li>
+        <li id="line">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" version="1.1" class="svg replaced-svg">
                 <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
@@ -57,7 +57,7 @@
           </div>
           <NuxtLink to="/investimenti" prefetchLinks id="link"><p class="linkcactivelass"> investimenti</p></NuxtLink>
         </li>
-        <li>
+        <li id="line">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" version="1.1" class="svg replaced-svg">
                 <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
@@ -82,6 +82,9 @@
 </template>
 
 <style >
+#line{
+  border-bottom: 1px solid #fff;
+}
 svg{
   width:20px;
  margin-right:10px;
@@ -114,7 +117,7 @@ svg{
    text-decoration: none;
    display:flex;
    padding:5px;
-   border-bottom:1px solid #fff;
+  
 }
 ul li div{
   text-align: center;
