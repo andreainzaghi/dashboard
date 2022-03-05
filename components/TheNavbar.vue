@@ -108,7 +108,7 @@
 }
 #line2:hover{
   border-bottom: 1px solid #fff;
-   background-color:lightgrey;
+   background-color:#DBDBDB;
 }
 #line3:hover{
   border-bottom: 1px solid #fff;

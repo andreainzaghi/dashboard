@@ -1,6 +1,6 @@
 <template>
 <div>
-        <div style="display:flex;justify-content:space-around;align-items:center;padding:50px;background-color:lightgrey;" id="foot">
+        <div style="display:flex;justify-content:space-around;align-items:center;padding:50px;background-color:#DBDBDB;" id="foot">
             <div>
                 <img src="img/icon-cards.svg" alt="">
                 <p>Investi in progetti immobiliari attraverso Carta o Bonifico a partire da 250€</p>
