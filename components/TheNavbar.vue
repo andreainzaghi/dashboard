@@ -22,7 +22,7 @@
         
           </li>
      
-         <li id="line">
+         <li id="line1">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" version="1.1" class="svg replaced-svg">
                 <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
@@ -43,7 +43,7 @@
           <NuxtLink to="/investimenti" prefetchLinks id="link"><p class="linkcactivelass"> investimenti</p></NuxtLink>
         </li>
        
-        <li id="line">
+        <li id="line3">
               <div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" version="1.1" class="svg replaced-svg">
                   <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
@@ -61,7 +61,7 @@
           </div>
           <NuxtLink to="/ricaricaoritira" prefetchLinks id="link"><p class="linkcactivelass">ricarica o ritira</p></NuxtLink>
           </li> 
-             <li id="line">
+             <li id="line2">
      
               <div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" version="1.1" class="svg replaced-svg">
@@ -93,20 +93,42 @@
 </template>
 
 <style >
-#line{
+#line,#line1,#line2,#line3{
   border-bottom: 1px solid #fff;
+  
+   padding:5px 9px;
+}
+#line:hover{
+  border-bottom: 1px solid #fff;
+   background-color:#F48939;
+}
+#line1:hover{
+  border-bottom: 1px solid #fff;
+   background-color:#8EDCF4;
+}
+#line2:hover{
+  border-bottom: 1px solid #fff;
+   background-color:lightgrey;
+}
+#line3:hover{
+  border-bottom: 1px solid #fff;
+   background-color:#23cd81;
 }
 svg{
   width:20px;
  margin-right:10px;
 }
 #navbar{
-  background-color:#22AB6E;
+  background-color:#ffbb00;
   width:100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding:20px;
+   background-image:url('/img/oranghome.png');
+  background-position-x:-20px;
+
+  background-size: 630px;
 
 }
 #link{
@@ -155,21 +177,48 @@ export default {
     }
   },
    mounted(){
- 
-
-        const video = document.querySelector('#video');
+      const changebackground = document.querySelector('#line')
+       const navbar = document.querySelector('#navbar')
+      changebackground.addEventListener("click", function() {
+      navbar.style.backgroundImage = "url('/img/oranghome.png')";
+      navbar.style.backgroundColor  = "orange";
+      });
+        const changebackground1 = document.querySelector('#line1')
+       const navbar1 = document.querySelector('#navbar')
+      changebackground1.addEventListener("click", function() {
+      navbar1.style.backgroundImage = "url('/img/bluehome.png')";
+       navbar.style.backgroundColor  = "lightblue";
+      });
+        const changebackground2 = document.querySelector('#line2')
+       const navbar2 = document.querySelector('#navbar')
+      changebackground2.addEventListener("click", function() {
+      navbar2.style.backgroundImage = "url('/img/greyhome.png')";
+          navbar.style.backgroundColor  = "lightgrey";
+      });
+        const changebackground3 = document.querySelector('#line3')
+       const navbar3 = document.querySelector('#navbar')
+      changebackground3.addEventListener("click", function() {
+      navbar3.style.backgroundImage = "url('/img/casgreen.png')";
+      navbar.style.backgroundColor  = "green";
+      });
+      // for (var i=0; i < changebackground.length; i++) {
+      //     changebackground[i].onclick = function(){
+      //     console.log('suca')
+      //     }
+      //   };
+        // const video = document.querySelector('#video');
         
-        let x = 0
-        window.addEventListener('wheel',function(){
-            let y = event.deltaY;
-            if (y > 0) {
-                x += 0.5
-            } else {
-                x -= 0.5
-            }
-            video.currentTime=x
-            console.log(video.currentTime)
-        })
+        // let x = 0
+        // window.addEventListener('wheel',function(){
+        //     let y = event.deltaY;
+        //     if (y > 0) {
+        //         x += 0.5
+        //     } else {
+        //         x -= 0.5
+        //     }
+        //     video.currentTime=x
+        //     console.log(video.currentTime)
+        // })
     
     
     }

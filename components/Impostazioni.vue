@@ -5,11 +5,11 @@
        
         <div  id="form" style="margin-bottom:100px;">
             <input type="text" placeholder="E-Mail *" v-model="message" value="" style="width:87.4%;">
-            <input type="text" v-model="message1" value="" placeholder="Password *">
-            <input type="text" v-model="message2" value="" placeholder="Conferma Password *">
-            <input type="text" v-model="message3" value="" placeholder="Nome *">
-            <input type="text" v-model="message4" value="" placeholder="Cognome *">
-            <input type="text" v-model="message5" value="" placeholder="Codice amico" style="width:87.4%;">
+            <input type="text" value="" placeholder="Password *">
+            <input type="text"  value="" placeholder="Conferma Password *">
+            <input type="text"  value="" placeholder="Nome *">
+            <input type="text"  value="" placeholder="Cognome *">
+            <input type="text"  value="" placeholder="Codice amico" style="width:87.4%;">
            
             
         </div>
@@ -18,11 +18,11 @@
          </div>
           <div v-if="check" id="form" style="margin:20px 0 100px 0;">
             <input type="text" placeholder="Telefono investitore privato **" v-model="message" value="" >
-            <input type="text" v-model="message1" value="" placeholder="Data di nascita investitore privato **">
-            <input type="text" v-model="message2" value="" placeholder="Nazionalità investitore privato **">
-            <input type="text" v-model="message3" value="" placeholder="Codice Fiscale investitore privato **">
-            <input type="text" v-model="message4" value="" placeholder="Provincia di nascita *">
-            <input type="text" v-model="message5" value="" placeholder="Comune di nascita *" >
+            <input type="text"  value="" placeholder="Data di nascita investitore privato **">
+            <input type="text"  value="" placeholder="Nazionalità investitore privato **">
+            <input type="text"  value="" placeholder="Codice Fiscale investitore privato **">
+            <input type="text"  value="" placeholder="Provincia di nascita *">
+            <input type="text"  value="" placeholder="Comune di nascita *" >
             
            
             

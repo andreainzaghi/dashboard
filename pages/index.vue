@@ -98,6 +98,7 @@
  width:100%;position:relative;background-color:#e2e2e2;padding:20px 30px;border-radius:10px;
  
   animation: myfirst 1s linear 0.5s infinite alternate;
+   
 }
 
 @keyframes myfirst {
