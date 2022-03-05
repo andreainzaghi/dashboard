@@ -28,9 +28,12 @@
           <div style="display:flex;justify-content:space-around;align-items:center;padding:100px;background-color:#242448;" id="foot3">
               <h4>Recrowd è autorizzata a svolgere in Italia attività di crowdlending (lending crowdfunding peer to peer) in qualità di agente di pagamento autorizzato dalla Banca di Francia ed iscritto al numero di registrazione 2019071202 del REGAFI ed opera in convenzione con Lemon Way, Istituto di Pagamento, operatore in regime di libera prestazione di servizi, sottoposto alla supervisione del regolamento francese (ACPR). Le proposte di investimento pubblicate non sono soggette alla previa approvazione della Banca d’Italia o di qualsiasi organo regolatore nazionale o estero. <br>
 
-Recrowd non offre consulenza finanziaria inerente alle attività proposte, le informazioni presenti sono di carattere generale e non costituiscono una consulenza specifica. Esiste un rischio di perdita totale o parziale del capitale con il quale si è effettuato l’investimento, il rischio di illiquidità di quest’ultimo e di non ricevere il rendimento atteso.
+                Recrowd non offre consulenza finanziaria inerente alle attività proposte, le informazioni presenti sono di carattere generale e non costituiscono una consulenza specifica. Esiste un rischio di perdita totale o parziale del capitale con il quale si è effettuato l’investimento, il rischio di illiquidità di quest’ultimo e di non ricevere il rendimento atteso.
 
-</h4>
+                </h4>
+        </div>
+          <div style="display:flex;justify-content:space-around;align-items:center;padding:50px;background-color:#242448;" id="foot3">
+            <img src="img/frt.png" alt="">
         </div>
  </div>
 </template>
