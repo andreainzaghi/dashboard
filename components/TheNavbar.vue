@@ -40,7 +40,7 @@
                 </g>
             </svg>
           </div>
-          <NuxtLink to="/investimenti" prefetchLinks id="link"><p class="linkcactivelass"> investimenti</p></NuxtLink>
+          <NuxtLink to="/investimenti" prefetchLinks id="link1"><p class="linkcactivelass"> investimenti</p></NuxtLink>
         </li>
        
         <li id="line3">
@@ -59,7 +59,7 @@
                   </g>
               </svg>
           </div>
-          <NuxtLink to="/ricaricaoritira" prefetchLinks id="link"><p class="linkcactivelass">ricarica o ritira</p></NuxtLink>
+          <NuxtLink to="/ricaricaoritira" prefetchLinks id="link2"><p class="linkcactivelass">ricarica o ritira</p></NuxtLink>
           </li> 
              <li id="line2">
      
@@ -77,7 +77,7 @@
                 </g>
             </svg>
           </div>
-          <NuxtLink to="/impostazioni" prefetchLinks id="link"><p class="linkcactivelass">impostazioni</p></NuxtLink>
+          <NuxtLink to="/impostazioni" prefetchLinks id="link3"><p class="linkcactivelass">impostazioni</p></NuxtLink>
         </li>
         <!-- <li>
           <Prova greeting-message="hello" />
@@ -131,7 +131,7 @@ svg{
   background-size: 630px;
 
 }
-#link{
+#link,#link1,#link2,#link3{
    list-style: none;
    text-decoration: none;
    text-align: center;
@@ -140,7 +140,7 @@ svg{
   color:rgb(255, 255, 255);
    text-transform: uppercase;
    list-style: none;
-  text-shadow: 1px 1px 1px grey;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
    text-decoration: none;
    font-size:20px;
 }
@@ -177,25 +177,25 @@ export default {
     }
   },
    mounted(){
-      const changebackground = document.querySelector('#line')
+      const changebackground = document.querySelector('#link')
        const navbar = document.querySelector('#navbar')
       changebackground.addEventListener("click", function() {
       navbar.style.backgroundImage = "url('/img/oranghome.png')";
       navbar.style.backgroundColor  = "#F48939";
       });
-        const changebackground1 = document.querySelector('#line1')
+        const changebackground1 = document.querySelector('#link1')
        const navbar1 = document.querySelector('#navbar')
       changebackground1.addEventListener("click", function() {
       navbar1.style.backgroundImage = "url('/img/bluehome.png')";
        navbar.style.backgroundColor  = "#8EDCF4";
       });
-        const changebackground2 = document.querySelector('#line2')
+        const changebackground2 = document.querySelector('#link3')
        const navbar2 = document.querySelector('#navbar')
       changebackground2.addEventListener("click", function() {
       navbar2.style.backgroundImage = "url('/img/greyhome.png')";
           navbar.style.backgroundColor  = "#DBDBDB";
       });
-        const changebackground3 = document.querySelector('#line3')
+        const changebackground3 = document.querySelector('#link2')
        const navbar3 = document.querySelector('#navbar')
       changebackground3.addEventListener("click", function() {
       navbar3.style.backgroundImage = "url('/img/casgreen.png')";
