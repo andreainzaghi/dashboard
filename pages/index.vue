@@ -2,7 +2,7 @@
   <div>
     <div>
       <h3>COMPLETA  LA TUA REGISTRAZIONE</h3>
-      <p style="margin:15px 0;">Per abilitare le funzioni di investimento e poter ricevere il denaro è necessario completare la tua iscrizione inserendo informazioni aggiuntive. Premi l'icona "?" per visualizzare i dati ed i documenti necessari per completare la registrazione.</p>
+      <p style="margin:15px 0;">Per abilitare le funzioni di investimento e poter ricevere il denaro è necessario completare la tua iscrizione inserendo informazioni aggiuntive. Premi ATTIVA ORA per visualizzare i dati ed i documenti necessari per completare la registrazione.</p>
       <div style="" id="containerprincipe">
          <div v-if="errormess" style="text-align:center;color:red;font-weight:bold;">Compila tutti i campi !</div>
         <div v-if="openform" id="form" style="margin-bottom:100px;">

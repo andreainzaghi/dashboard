@@ -49,6 +49,7 @@
    </div> 
 </template>
 <style scoped>
+
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -72,6 +73,7 @@
 *{
 font-family: 'Outfit', sans-serif;
 font-family: 'Poppins', sans-serif;
+
 }
 ul li{
   color:black;

@@ -10,7 +10,7 @@
       
 
          <div id="ddffgg">
-              <NuxtLink to="/ricaricaoritira" prefetchLinks id="linky">
+              <NuxtLink to="/investimenti" prefetchLinks id="linky">
                 <div><h3>Investimenti</h3></div>
                 <div>0.00$</div>
                 <div><p>Investi</p></div>
