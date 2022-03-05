@@ -234,7 +234,7 @@ form
 	box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
 }
 #lineafollow{
-  width:85px;
+  width:118px;
   height:6px;
   background-color:rgb(0, 0, 0);
   border:2px solid rgb(255, 255, 255);
