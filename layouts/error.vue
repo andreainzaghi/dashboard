@@ -29,6 +29,7 @@ export default {
   },
   head () {
     const title =
+    // PROGRAMMATO DA ANDREA INZAGHI
       this.error.statusCode === 404 ? this.pageNotFound : this.otherError
     return {
       title

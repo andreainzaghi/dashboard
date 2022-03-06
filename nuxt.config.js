@@ -34,7 +34,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
-
+// PROGRAMMATO DA ANDREA INZAGHI
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
@@ -66,7 +66,7 @@ export default {
       }
     }
   },
-
+// PROGRAMMATO DA ANDREA INZAGHI
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }

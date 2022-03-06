@@ -90,7 +90,7 @@ svg{
    background-size: 280px;
 }
 #ddffgg:first-child:hover{
-
+/* // PROGRAMMATO DA ANDREA INZAGHI */
   background-color:#22AB6E;
  
 

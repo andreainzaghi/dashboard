@@ -84,6 +84,7 @@ export default {
       finish:false   ,
       sendmess:false   ,
       messaggiovar:null,
+      // PROGRAMMATO DA ANDREA INZAGHI
        currentUser:0,
      
          message:[ {
