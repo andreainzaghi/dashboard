@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div v-if="openform == true" style="width:300px;height:500px;border:1px solid lightgrey;background-color:#fff;border-radius:10px;padding:15px;position:fixed;bottom:120px;right:40px;z-index:22;">
+        <div v-if="openform == true" style="width:300px;height:500px;border:1px solid lightgrey;background-color:#fff;border-radius:10px;padding:15px;position:fixed;bottom:100px;right:40px;z-index:22;">
             <div id="exitid" @click="OpenMail1()" style="position:absolute;top:15px;right:15px;border-radius:20px;padding:3px 10px;border:1px solid grey;">EXIT</div>
             <div>
                 <img src="img/logo-recrowd.svg" alt="" style="height:40px;">
@@ -17,7 +17,7 @@
             </div>
         </div>
         <div id="mail" @click="OpenMail()">
-               <img src="img/mails.png" alt="" style="width:60px;">
+               <img src="img/mails.png" alt="" style="width:40px;">
         </div>
         
     </div>
@@ -60,8 +60,8 @@ export default {
 
 <style scoped>
 #mail{
-    height:80px;
-    width:80px;
+    height:60px;
+    width:60px;
    display:flex;
    justify-content: center;
    align-items:center;
