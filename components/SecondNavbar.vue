@@ -89,4 +89,20 @@ svg{
   background-position-y:5px;
    background-size: 280px;
 }
+#ddffgg:first-child:hover{
+
+  background-color:#22AB6E;
+ 
+
+}
+#ddffgg:nth-child(2):hover{
+
+  background-color:#8EDCF4;
+
+}
+#ddffgg:nth-child(3):hover{
+
+  background-color:#22AB6E;
+
+}
 </style>

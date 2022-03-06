@@ -119,7 +119,7 @@ svg{
  margin-right:10px;
 }
 #navbar{
-  background-color:#ffbb00;
+  background-color:#F48A39;
   width:100%;
   display: flex;
   justify-content: center;
@@ -181,7 +181,7 @@ export default {
        const navbar = document.querySelector('#navbar')
       changebackground.addEventListener("click", function() {
       navbar.style.backgroundImage = "url('/img/oranghome.png')";
-      navbar.style.backgroundColor  = "#F48939";
+      navbar.style.backgroundColor  = "#F48A39";
       });
         const changebackground1 = document.querySelector('#link1')
        const navbar1 = document.querySelector('#navbar')

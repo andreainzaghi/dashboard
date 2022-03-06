@@ -23,16 +23,16 @@
         </div>
          <div v-if="second" style="display:flex;width:100%;justify-content:center;align-items:center;font-weight:bold;">
             <div v-if="!openform" style="position:absolute;top:10px;left:10px;">
-              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;">REPEAT :</div>
-              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;">Nome : <b>{{message}}</b></div>
-              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;">Cognome :<b>{{message1}}</b></div>
-              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;">Eta' :<b>{{message2}}</b></div>
-              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;">Telefono :<b>{{message3}}</b></div>
-              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;">Nazionalita' :<b>{{message4}}</b></div>
-              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;">Codice Fiscale :<b>{{message5}}</b></div>
-              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;">Citta' :<b>{{message6}}</b></div>
-              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;">Indirizzo :<b>{{message7}}</b></div>
-              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;"><button @click="dateRangeText()" id="linky">MODIFICA DATI :</button></div>
+              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">REPEAT :</div>
+              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Nome : <b>{{message}}</b></div>
+              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Cognome :<b>{{message1}}</b></div>
+              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Eta' :<b>{{message2}}</b></div>
+              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Telefono :<b>{{message3}}</b></div>
+              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Nazionalita' :<b>{{message4}}</b></div>
+              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Codice Fiscale :<b>{{message5}}</b></div>
+              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Citta' :<b>{{message6}}</b></div>
+              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Indirizzo :<b>{{message7}}</b></div>
+              <div style=" color:grey;text-shadow:1px 1px 1px #fff;"><button @click="dateRangeText()" id="linky">MODIFICA DATI :</button></div>
           </div>
         <div class="payment">
          

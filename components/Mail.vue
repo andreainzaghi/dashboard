@@ -10,7 +10,7 @@
                 </div>
                 <div style="width:100%;border:1px solid lightgrey;"> </div>
         
-                <div style="overflow:scroll;width:100%;height:325px;padding:1px;" id="chatbg">
+                <div style="overflow:scroll;width:100%;height:325px;padding:1px;padding:0 10px;" id="chatbg">
                   <div  v-for="element in messge"  :key="element.id" >
                     <div v-if="element.status == 'sent'"  id="backmessage">
                         <p >{{element.message}}</p>
@@ -39,11 +39,11 @@
 </template>
 <style scoped>
 #chatbg{
-    background-image:url('/img/nuvole.jpg');
+    background-image:url('/img/nuvo.jpg');
   background-position-x:0px;
-
   background-size: 320px;
 }
+
 #exitid:hover{
     background:#F48A39;
     color:#fff;
@@ -123,10 +123,12 @@ export default {
 
 <style scoped>
 #backmessage{
+  border:1px solid rgba(188, 188, 188, 0.758);
   padding:10px;margin-top:5px;width:75%;border-radius:10px;font-size:12.5px;
    animation: myfirst2 9s linear 0.1s infinite alternate; font-weight:bold;color:black;
 }
 #backmessage1{
+  border:1px solid rgba(168, 168, 168, 0.758);
   padding:10px;margin-top:5px;width:75%;border-radius:10px;font-size:12.5px;
    animation: myfirst2 9s linear 0.1s infinite alternate; font-weight:bold;color:black;margin-left:25%;
 }
@@ -137,6 +139,7 @@ export default {
    justify-content: center;
    align-items:center;
    animation: myfirst2 4s linear 0.1s infinite alternate; 
+   
   border-radius:50%;
   
 }
@@ -156,9 +159,9 @@ export default {
 
 
  @keyframes myfirst2 {
-  0%   {background-color:rgb(255, 141, 11);}
-  33%  {background-color:#22AB6E;}
-  67%  {background-color:#8EDCF4;}
-  100% {background-color:rgb(186, 186, 186);}
+  0%   {background-color:rgba(255, 141, 11, 0.703);}
+  33%  {background-color:#22ab6da7;}
+  67%  {background-color:#8edcf494;}
+  100% {background-color:rgba(186, 186, 186, 0.607);}
 } 
 </style> 
