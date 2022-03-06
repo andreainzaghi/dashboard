@@ -4,12 +4,12 @@
       <div style="" id="containerprincipe">
        
         <div  id="form" style="margin-bottom:100px;">
-            <input type="text" placeholder="E-Mail *" v-model="message" value="" style="width:87.4%;">
-            <input type="text" value="" placeholder="Password *">
-            <input type="text"  value="" placeholder="Conferma Password *">
-            <input type="text"  value="" placeholder="Nome *">
-            <input type="text"  value="" placeholder="Cognome *">
-            <input type="text"  value="" placeholder="Codice amico" style="width:87.4%;">
+            <input type="text" placeholder="E-Mail *" v-model="messageui" value="ciro@gmsil" style="width:87.4%;">
+            <input type="password" value=""  v-model="messageui1" placeholder="Password *">
+            <input type="password"  value=""  v-model="messageui2" placeholder="Conferma Password *">
+            <input type="text"  value=""  v-model="messageui3" placeholder="Nome *">
+            <input type="text"  value=""  v-model="messageui4" placeholder="Cognome *">
+            <input type="text"  value=""  v-model="messageui5" placeholder="Codice amico" style="width:87.4%;">
            
             
         </div>
@@ -52,7 +52,11 @@ export default {
   data () {
     return {
       check: false,
-      message: null   
+      messageui: 'cirotartaglia@gmail.com'   ,
+      messageui1:'messagsdfsfeui1',
+       messageui2:'messagsdfsfeui1',
+      messageui3:'Ciro',
+       messageui4:'Tartaglia'
     }
   },
    methods:{

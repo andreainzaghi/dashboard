@@ -76,7 +76,7 @@ svg{
 #ddffgg:nth-child(2){
 
   background-color:#f48a39;
-   background-image:url('/img/weed.png');
+   background-image:url('/img/weedorange.png');
   background-position-x:220px;
   background-position-y:-10px;
    background-size: 230px;

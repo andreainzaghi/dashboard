@@ -2,9 +2,9 @@
   <div>
     <div>
       <h3>COMPLETA  LA TUA REGISTRAZIONE</h3>
-      <p style="margin:15px 0;">Per abilitare le funzioni di investimento e poter ricevere il denaro è necessario completare la tua iscrizione inserendo informazioni aggiuntive. Premi ATTIVA ORA per visualizzare i dati ed i documenti necessari per completare la registrazione.</p>
+      <p style="margin:15px 0;">Per abilitare le funzioni di investimento e poter ricevere il denaro è necessario completare la tua iscrizione inserendo informazioni aggiuntive. Premi <b @click="dateRangeText()" style="cursor:pointer;">ATTIVA ORA</b>  per visualizzare i dati ed i documenti necessari per completare la registrazione.</p>
       <div style="" id="containerprincipe">
-         <div v-if="errormess" style="text-align:center;color:red;font-weight:bold;">Compila perfavore tutti i campi !</div>
+         <div v-if="errormess" style="text-align:center;color:#F48939;font-weight:bold;text-shadow:1px 1px 1px red;">PERFAVORE COMPILA TUTTI I CAMPI !</div>
         <div v-if="openform" id="form" style="margin-bottom:100px;background-image:url('/img/dots1.png');   background-size: cover;">
             <input type="text" placeholder="Nome *" v-model="message" value="">
             <input type="text" v-model="message1" value="" placeholder="Cognome *">
@@ -18,8 +18,8 @@
             
         </div>
         <div v-if="!first" style="display:flex;width:100%;justify-content:center;align-items:center;font-weight:bold;">
-          <p style="color:#fff;display:flex;width:100%;justify-content:center;align-items:center;text-shadow:1px 1px 1px black;">Inizia la tua esperienza con <img src="img/logo-recrowd.svg" alt="" style="height:30px;margin:0 15px;">
-          CLICCA su ATTIVA ORA</p>
+          <p style="color:#fff;display:flex;width:100%;justify-content:center;align-items:center;text-shadow:1px 1px 1px black;" >Inizia la tua esperienza con <img src="img/logo-recrowd.svg" alt="" style="height:30px;margin:0 15px;"><b @click="dateRangeText()" style="cursor:pointer;"> CLICCA su ATTIVA ORA</b>
+         </p>
         </div>
          <div v-if="second" style="display:flex;width:100%;justify-content:center;align-items:center;font-weight:bold;">
         <div class="payment">
@@ -30,7 +30,7 @@
                 <h2 class="bankName" contenteditable="true"> </h2>
                 <form>
                   <div class="inputBox">
-                    <span>Card No.</span>
+                    <span>Card N°</span>
                     <input type="text" placeholder="0123 4567 8901 2345" maxlength="19">
                   </div>
                   <div class="inputBox">

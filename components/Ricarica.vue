@@ -49,12 +49,12 @@
        
          <div style="display:flex;justify-content:space-between;align.items:center;">
               <div>CONTO VIRTUALE CLIENTE NON ABILITATO</div>
-              <div @click="ContoVirtuale2()" style="width:55px;border:1px solid grey;padding:10px;">EXIT</div>
+              <div @click="ContoVirtuale2()" style="width:55px;border:1px solid grey;padding:3px 10px;" id="red-button">EXIT</div>
           </div>
           <div>
               Per poter abilitare il tuo conto virtuale è necessario caricare il documento d’identità tramite la tua Dashboard
           </div>
-           <div @click="ContoVirtuale2()" style="width:90px;border:1px solid grey;padding:10px;">ANNULLA</div>
+           <div @click="ContoVirtuale2()" style="width:90px;border:1px solid grey;padding: 3px 10px;margin-top:10px;" id="red-button">ANNULLA</div>
     </div>
     
     </div>
@@ -89,6 +89,9 @@ export default {
 }
 </script>
 <style scoped>
+#red-button:hover{
+    background-color:#5EC57E;
+}
 #inv div{
     color:#fff;
     text-shadow:1px 1px 1px rgb(32, 32, 32);
