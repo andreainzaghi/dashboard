@@ -11,7 +11,8 @@
                 <div style="width:100%;border:1px solid lightgrey;"> </div>
         
                 <div style="overflow:scroll;width:100%;height:325px;padding:1px;padding:0 10px;" id="chatbg">
-                  <div  v-for="element in messge"  :key="element.id" >
+
+                  <div  v-for="element in message"  :key="element.id" >
                     <div v-if="element.status == 'sent'"  id="backmessage">
                         <p >{{element.message}}</p>
                         <p><small>{{element.date}}</small></p>
@@ -21,6 +22,7 @@
                         <p><small>{{element.date}}</small></p>
                     </div>     
                 </div> 
+
               </div>
                  <div style="width:calc(100% - 30px);border:1px solid lightgrey;margin-top:10px;position:absolute;bottom:15px;right:15px;left:15px;padding:10px;background-color:lightgrey;">
                   
@@ -84,7 +86,7 @@ export default {
       messaggiovar:null,
        currentUser:0,
      
-         messge:[ {
+         message:[ {
                     date: '10/01/2020 15:50:00',
                     message: 'Ciao, solo per oggi ti chiediamo di lasciarci un messaggio e il nostro team ti contatterà prima possibile.Grazie.',
                     status: 'sent'
@@ -96,7 +98,7 @@ export default {
      SendMessage(){
            var dayjs = require('dayjs')
            if (this.messagemail !== ''){
-           this.messge.push({
+           this.message.push({
               date: dayjs().format('DD/MM/YY HH.MM'),
               message: this.messagemail,
               status: 'sent1'

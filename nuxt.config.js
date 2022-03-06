@@ -10,7 +10,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - dashboard-recrowd',
-    title: 'dashboard-recrowd',
+    title: 'Andrea Inzaghi RECROWD',
     htmlAttrs: {
       lang: 'en'
     },
@@ -21,7 +21,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {rel: 'icon', type: 'image/x-icon', href: 'favicon/favicon.ico' },
       {rel:"stylesheet" , href:"https://fonts.googleapis.com/css2?family=Outfit&family=Poppins:ital,wght@1,300&display=swap"},
       {rel:"stylesheet", href:"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css", integrity:"sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==", crossorigin:"anonymous", referrerpolicy:"no-referrer" }
     ]
