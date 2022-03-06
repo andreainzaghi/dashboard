@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-if="openform == true" style="width:300px;height:500px;border:1px solid lightgrey;background-color:#fff;border-radius:10px;padding:15px;position:fixed;bottom:100px;right:40px;z-index:22;">
-            <div id="exitid" @click="OpenMail1()" style="position:absolute;top:15px;right:15px;border-radius:20px;padding:3px 10px;border:1px solid grey;">EXIT</div>
+            <div id="exitid" @click="OpenMail1()" style="position:absolute;top:15px;right:15px;border-radius:20px;padding:1px 7px;border:1px solid grey;">EXIT</div>
             <div>
                 <img src="img/logo-recrowd.svg" alt="" style="height:40px;">
                 <div>
@@ -54,7 +54,7 @@ export default {
                
      },
  
-    }
+    },
 }
 </script>
 
@@ -65,14 +65,28 @@ export default {
    display:flex;
    justify-content: center;
    align-items:center;
-  animation: myfirst2 8s linear 0.1s infinite alternate;
+ animation: myfirst2 4s linear 0.1s infinite alternate; 
+  border-radius:50%;
+  
+}
+#mail:hover{
+    height:60px;
+    width:60px;
+   display:flex;
+   justify-content: center;
+   align-items:center;
+    border-top-right-radius:1%;
+    border-top-left-radius:50%;
+   border-bottom-right-radius:50%;
+   border-bottom-left-radius:50%;
+ 
    
 }
 
-@keyframes myfirst2 {
-  0%   {background-color:rgb(255, 141, 11);;border-top-left-radius: 50%;}
-  33%  {background-color:#22AB6E;border-top-right-radius: 50%;}
-  67%  {background-color:#8EDCF4;border-bottom-left-radius: 50%;}
-  100% {background-color: rgb(186, 186, 186);border-bottom-right-radius: 50%;}
+ @keyframes myfirst2 {
+  0%   {background-color:rgb(255, 141, 11);}
+  33%  {background-color:#22AB6E;}
+  67%  {background-color:#8EDCF4;}
+  100% {background-color:rgb(186, 186, 186);}
 } 
-</style>
+</style> 
