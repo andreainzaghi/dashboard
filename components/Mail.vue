@@ -59,7 +59,7 @@ export default {
      
          messge:[ {
                     date: '10/01/2020 15:50:00',
-                    message: 'Ricordati di dargli da mangiare',
+                    message: 'Ciao, solo per oggi ti chiediamo di lasciarci un messaggio e il nostro team ti contatterà prima possibile.Grazie.',
                     status: 'sent'
                 },
           ]

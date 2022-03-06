@@ -14,7 +14,7 @@
             <input type="text" v-model="message5" value="" placeholder="Codice Fiscale *">
             <input type="text" v-model="message6" value="" placeholder="Citta' *">
             <input type="text" v-model="message7" value="" placeholder="Indirizzo *">
-            <button @click="click()" id ="btn-formi" style="width:340px;margin-left:calc(50% - 170px);border:1px solid grey;padding:10px;border-radius:5px;margin-top:10px;">COMPILA TUTTI I FORM E CLICCA QUI</button>
+            <button @click="click()" id ="btn-formi" style="width:340px;margin-left:calc(50% - 170px);padding:10px;border-radius:5px;margin-top:10px;">COMPILA TUTTI I FORM E CLICCA QUI</button>
             
         </div>
         <div v-if="!first" style="display:flex;width:100%;justify-content:center;align-items:center;font-weight:bold;">
@@ -96,8 +96,13 @@ div b{
   color:#000000;
   text-shadow: 1px 1px rgb(255, 255, 255);
 }
+#btn-formi{
+border:1px solid grey;
+}
 #btn-formi:hover{
 background-color: #F48939;
+border:1px solid #ffffff;
+color:#fff;
 }
 #linky{
  color:rgb(0, 0, 0);
@@ -275,6 +280,7 @@ form
   padding:5px 10px;
   border-radius:60px;
   border:1px solid rgb(85, 85, 85);
+  outline:none;
 }
 button{
   color:black;
