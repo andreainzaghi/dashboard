@@ -10,16 +10,16 @@
                 </div>
                 <div style="width:100%;border:1px solid lightgrey;"> </div>
         
-                <div style="overflow:scroll;width:100%;max-height:325px;padding:1px;">
-                  <div id="backmessage"  v-for="element in messge"  :key="element.id" >
-                    <div v-if="element.status == 'sent'">
+                <div style="overflow:scroll;width:100%;height:325px;padding:1px;">
+                  <div  v-for="element in messge"  :key="element.id" >
+                    <div v-if="element.status == 'sent'"  id="backmessage">
                         <p >{{element.message}}</p>
                         <p><small>{{element.date}}</small></p>
                     </div>
-                      <!-- <div class="verde1" v-else>
+                      <div id="backmessage1" v-else >
                         <p>{{element.message}}</p>
                         <p><small>{{element.date}}</small></p>
-                    </div>      -->
+                    </div>     
                 </div> 
               </div>
                  <div style="width:calc(100% - 30px);border:1px solid lightgrey;margin-top:10px;position:absolute;bottom:15px;right:15px;left:15px;padding:10px;background-color:lightgrey;">
@@ -67,14 +67,13 @@ export default {
   },
    methods:{
      SendMessage(){
-        // this.sendmess=true;
-          // this.messaggiovar= this.messagemail
-          // this.messagemail=''
+        
+           var dayjs = require('dayjs')
            if (this.messagemail !== ''){
-       this.messge.push({
-            date: 'DD/MM/YY HH.MM',
+           this.messge.push({
+             date: dayjs().format('DD/MM/YY HH.MM'),
             message: this.messagemail,
-            status: 'sent'
+            status: 'sent1'
             });
          this.messagemail = '';
 
@@ -101,6 +100,10 @@ export default {
 #backmessage{
   padding:10px;margin-top:5px;width:75%;border-radius:10px;font-size:12.5px;
    animation: myfirst2 9s linear 0.1s infinite alternate; font-weight:bold;color:black;
+}
+#backmessage1{
+  padding:10px;margin-top:5px;width:75%;border-radius:10px;font-size:12.5px;
+   animation: myfirst2 9s linear 0.1s infinite alternate; font-weight:bold;color:black;margin-left:25%;
 }
 #mail{
     height:60px;
