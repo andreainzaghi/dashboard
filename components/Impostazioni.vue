@@ -9,9 +9,7 @@
             <input type="password"  value=""  v-model="messageui2" placeholder="Conferma Password *">
             <input type="text"  value=""  v-model="messageui3" placeholder="Nome *">
             <input type="text"  value=""  v-model="messageui4" placeholder="Cognome *">
-            <input type="text"  value=""  v-model="messageui5" placeholder="Codice amico" style="width:87.4%;">
-           
-            
+            <input type="text"  value=""  v-model="messageui5" placeholder="Codice amico" style="width:87.4%;"> 
         </div>
          <div id="form1">
                 <input type="checkbox" v-model="check"><span style="">Dati investitore</span>
@@ -23,9 +21,6 @@
             <input type="text"  value="" placeholder="Codice Fiscale investitore privato **">
             <input type="text"  value="" placeholder="Provincia di nascita *">
             <input type="text"  value="" placeholder="Comune di nascita *" >
-            
-           
-            
         </div>
           <div id="form2">
               <div>
@@ -41,9 +36,6 @@
          <div style="width:100%;"> 
              <button  style="width:88%;margin-left: 6%;height:50px;margin-top:50px;background-color:blue;color:#fff;border-radius:50px;border:2px solid #fff;">CAMBIA IMPOSTAZIONI</button>
          </div>
-     
-      
-     
   </div>
 </template>
 <script>
@@ -52,17 +44,14 @@ export default {
   data () {
     return {
       check: false,
-      messageui: 'cirotartaglia@gmail.com'   ,
+      messageui: 'cirotartaglia@gmail.com',
       messageui1:'messagsdfsfeui1',
-       messageui2:'messagsdfsfeui1',
+      messageui2:'messagsdfsfeui1',
       messageui3:'Ciro',
-       messageui4:'Tartaglia'
+      messageui4:'Tartaglia'
     }
   },
    methods:{
-     dateRangeText() {
-        
-     },
 
     }
 }
@@ -109,7 +98,11 @@ export default {
 #containerprincipe{
   /* height:650px; */
   /* height:150px; */
- width:100%;position:relative;background-color:#e2e2e2;padding:20px 30px;border-radius:10px;
+ width:100%;
+ position:relative;
+ background-color:#e2e2e2;
+ padding:20px 30px;
+ border-radius:10px;
  
   animation: myfirst 1s linear 0.5s infinite alternate;
   background-image:url('/img/dot2.png');

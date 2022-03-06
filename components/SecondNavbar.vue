@@ -14,7 +14,7 @@
                 <div><h3>Investimenti</h3></div>
                 <div>0.00$</div>
                 <div><p>Investi</p></div>
-           </NuxtLink>
+              </NuxtLink>
           
         </div>
 

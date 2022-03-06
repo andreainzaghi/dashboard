@@ -17,14 +17,15 @@
             </div>
         </div>
         <div id="mail" @click="OpenMail()">
-                    <img src="img/mails.png" alt="" style="width:60px;">
+               <img src="img/mails.png" alt="" style="width:60px;">
         </div>
         
     </div>
 </template>
 <style scoped>
 #exitid:hover{
-    background:lightgrey;
+    background:#F48A39;
+    color:#fff;
 
 }
 
@@ -70,8 +71,8 @@ export default {
 
 @keyframes myfirst2 {
   0%   {background-color:rgb(255, 141, 11);;border-top-left-radius: 50%;}
-  33%   {background-color:#22AB6E;border-top-right-radius: 50%;}
-   67%   {background-color:#8EDCF4;border-bottom-left-radius: 50%;}
+  33%  {background-color:#22AB6E;border-top-right-radius: 50%;}
+  67%  {background-color:#8EDCF4;border-bottom-left-radius: 50%;}
   100% {background-color: rgb(186, 186, 186);border-bottom-right-radius: 50%;}
 } 
 </style>

@@ -49,6 +49,8 @@
 
 #foot div:nth-child(3){
     width:30%;
-    display:flex;justify-content:space-around;align-items:center;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
 }
 </style>

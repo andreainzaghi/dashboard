@@ -19,7 +19,6 @@
             </div>
             <div><h3>AGGIUNGI FONDI</h3>
              <p>Tramite Carta di Credito o Bonifico</p></div>
-
         </div>
          <div id="inv" @click="ContoVirtuale1()" >
             <div>
@@ -38,8 +37,6 @@
                 </svg>
             </div>
             <div><h3>RITIRA CASH-OUT</h3><p>Hai del credito da ritirare</p></div>
-            
-
         </div>
     </div>
     <div style="background-color:#E2E2E2;padding:30px;border-radius:10px;margin-top:20px;">
@@ -66,22 +63,16 @@ export default {
     return {
       openform: false,
     
- 
-             
-     
     }
   },
    methods:{
    
      ContoVirtuale1(){
        this.openform=true;
-       
-       
+      
      },
       ContoVirtuale2(){
-      
         this.openform=false;
-        
        
      },
    
@@ -111,12 +102,12 @@ svg{
     border-radius:10px;
     height:150px;
     background-color:#dbdbdb;
-      background-image:url('/img/credit.png');
-  background-position-x:270px;
-  background-position-y:-55px;
-  background-size: 430px;
-  transition:0.3s;
-  border:2px dashed  grey;
+    background-image:url('/img/credit.png');
+    background-position-x:270px;
+    background-position-y:-55px;
+    background-size: 430px;
+    transition:0.3s;
+    border:2px dashed  grey;
 }
 #inv:nth-child(2) {
     padding:20px;
@@ -125,12 +116,12 @@ svg{
     border-radius:10px;
     height:150px;
     background-color:#eaeaea;
-      background-image:url('/img/gpig.png');
-  background-position-x:300px;
-  background-position-y:-30px;
-  background-size: 230px;
-   transition:0.3s;
-   border:2px dashed  grey;
+    background-image:url('/img/gpig.png');
+    background-position-x:300px;
+    background-position-y:-30px;
+    background-size: 230px;
+    transition:0.3s;
+    border:2px dashed  grey;
 }
 #inv:nth-child(1):hover {
 transform: scale(1.02);

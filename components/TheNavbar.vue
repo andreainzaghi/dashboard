@@ -201,26 +201,7 @@ export default {
       navbar3.style.backgroundImage = "url('/img/casgreen.png')";
       navbar.style.backgroundColor  = "#22AB6E";
       });
-      // for (var i=0; i < changebackground.length; i++) {
-      //     changebackground[i].onclick = function(){
-      //     console.log('suca')
-      //     }
-      //   };
-        // const video = document.querySelector('#video');
-        
-        // let x = 0
-        // window.addEventListener('wheel',function(){
-        //     let y = event.deltaY;
-        //     if (y > 0) {
-        //         x += 0.5
-        //     } else {
-        //         x -= 0.5
-        //     }
-        //     video.currentTime=x
-        //     console.log(video.currentTime)
-        // })
-    
-    
+
     }
 }
 </script>

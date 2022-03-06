@@ -101,7 +101,6 @@
   animation: myfirst 1s linear 0.5s infinite alternate;
    
 }
-
 @keyframes myfirst {
   0%   {border:1px solid rgb(255, 255, 255);}
  
