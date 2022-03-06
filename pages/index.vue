@@ -58,7 +58,7 @@
         <div style="padding:10px 20px;position:absolute;bottom:0;right:0;left:0;">
           <div id="lineafollow"></div>
           <ul style="display:flex;justify-content:space-between;" class="cost-casa">
-            <li><button id="linky"> ABILITATO</button></li>
+            <li><button > ABILITATO -></button></li>
             <li><button @click="dateRangeText()" id="linky">ATTIVA ORA</button></li>
             
            
@@ -84,6 +84,7 @@
   text-decoration: none;
   border:2px solid rgb(255, 255, 255);
   padding:5px 17px;border-radius:20px;
+    animation: myfirst1 2s linear 0.5s infinite alternate;
 }
 #ddffgg{
   padding:20px;
@@ -102,9 +103,14 @@
 }
 
 @keyframes myfirst {
-  0%   {border:1px solid rgb(0, 0, 0);}
+  0%   {border:1px solid rgb(255, 255, 255);}
  
-  100% {border:1px solid rgb(255, 255, 255);}
+  100% {border:1px solid rgb(255, 141, 11);}
+}
+@keyframes myfirst1 {
+  0%   {border:2px solid rgb(255, 255, 255);}
+ 
+  100% {border:2px solid rgb(255, 141, 11);}
 }
 .payment
 {
@@ -235,11 +241,11 @@ form
 	box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
 }
 #lineafollow{
-  width:118px;
+  width:83px;
   height:6px;
-  background-color:rgb(0, 0, 0);
+  background-color:rgb(229, 134, 11);
   border:2px solid rgb(255, 255, 255);
-  transition: 3s;
+  transition: 3.5s;
   border-radius: 5px;
 }
 #form input{

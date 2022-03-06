@@ -38,6 +38,9 @@
          
        </ul>
      </div>
+     <div style="position:fixed;right:40px;bottom:30px;">
+       <Mail/>
+     </div>
       <div style="display:flex;width:100%;padding:0%;height:calc(100vh - 71px);">
         <div style="display:flex;width:20%;margin:0 2% 0 0;">
             <TheNavbar/>

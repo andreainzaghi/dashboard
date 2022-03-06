@@ -192,8 +192,8 @@ export default {
         const changebackground2 = document.querySelector('#link3')
        const navbar2 = document.querySelector('#navbar')
       changebackground2.addEventListener("click", function() {
-      navbar2.style.backgroundImage = "url('/img/greyhome.png')";
-          navbar.style.backgroundColor  = "#DBDBDB";
+      navbar2.style.backgroundImage = "url('/img/imphome.png')";
+          navbar.style.backgroundColor  = "lightgrey";
       });
         const changebackground3 = document.querySelector('#link2')
        const navbar3 = document.querySelector('#navbar')

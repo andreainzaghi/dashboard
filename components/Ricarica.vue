@@ -89,8 +89,13 @@ export default {
 }
 </script>
 <style scoped>
+#red-button{
+    border-radius:20px;
+}
 #red-button:hover{
     background-color:#5EC57E;
+    color:#fff;
+    text-shadow: 1px 1px 1px black;
 }
 #inv div{
     color:#fff;

@@ -54,8 +54,10 @@
 }
 #inv:nth-child(1):hover {
 transform: scale(1.02);
+border:2px dashed  rgb(19, 113, 255);
 }
 #inv:nth-child(2):hover {
 transform: scale(1.02);
+border:2px dashed  rgb(19, 113, 255);
 }
 </style>
