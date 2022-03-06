@@ -14,7 +14,7 @@
             <input type="text" v-model="message5" value="" placeholder="Codice Fiscale *">
             <input type="text" v-model="message6" value="" placeholder="Citta' *">
             <input type="text" v-model="message7" value="" placeholder="Indirizzo *">
-            <button @click="click()" style="width:340px;margin-left:calc(50% - 170px);border:1px solid grey;padding:10px;border-radius:5px;margin-top:10px;">COMPILA TUTTI I FORM E CLICCA QUI</button>
+            <button @click="click()" id ="btn-formi" style="width:340px;margin-left:calc(50% - 170px);border:1px solid grey;padding:10px;border-radius:5px;margin-top:10px;">COMPILA TUTTI I FORM E CLICCA QUI</button>
             
         </div>
         <div v-if="!first" style="display:flex;width:100%;justify-content:center;align-items:center;font-weight:bold;">
@@ -22,7 +22,20 @@
          </p>
         </div>
          <div v-if="second" style="display:flex;width:100%;justify-content:center;align-items:center;font-weight:bold;">
+            <div v-if="!openform" style="position:absolute;top:10px;left:10px;">
+              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;">REPEAT :</div>
+              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;">Nome : <b>{{message}}</b></div>
+              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;">Cognome :<b>{{message1}}</b></div>
+              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;">Eta' :<b>{{message2}}</b></div>
+              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;">Telefono :<b>{{message3}}</b></div>
+              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;">Nazionalita' :<b>{{message4}}</b></div>
+              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;">Codice Fiscale :<b>{{message5}}</b></div>
+              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;">Citta' :<b>{{message6}}</b></div>
+              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;">Indirizzo :<b>{{message7}}</b></div>
+              <div style=" color:#F48939;text-shadow:1px 1px 1px #fff;"><button @click="dateRangeText()" id="linky">MODIFICA DATI :</button></div>
+          </div>
         <div class="payment">
+         
               <div class="bg"></div>
               <div class="card">
                 <img src="img/chip.png" class="chip">
@@ -79,6 +92,13 @@
   </div>
 </template>
 <style scoped>
+div b{
+  color:#000000;
+  text-shadow: 1px 1px rgb(255, 255, 255);
+}
+#btn-formi:hover{
+background-color: #F48939;
+}
 #linky{
  color:rgb(0, 0, 0);
   text-decoration: none;

@@ -10,8 +10,9 @@
                 </div>
                 <div style="width:100%;border:1px solid lightgrey;"> </div>
                  <div style="width:calc(100% - 30px);border:1px solid lightgrey;margin-top:10px;position:absolute;bottom:15px;right:15px;left:15px;padding:10px;background-color:lightgrey;">
-                     <div>
-                         <input type="text" style="background-color:#fff;width:100%;border-radius:20px;font-size:12px;padding:10px;border:none;outline:none;border:1px solid grey;" placeholder="In che modo possiamo esserti utili?">
+                     <div style="display:flex;align-items:center;">
+                         <input type="text" style="background-color:#fff;width:100%; border-bottom-left-radius:50px; border-top-left-radius:50px;font-size:12px;padding:10px;border:none;outline:none;border:1px solid grey;" placeholder="In che modo possiamo esserti utili?">
+                         <div style="cursor:pointer; border-bottom-right-radius:50%; background-color:#22AB6E;color:#fff; border-top-right-radius:50%;font-size:12px;padding:10px;border:none;outline:none;border-right:1px solid grey;border-top:1px solid grey;border-bottom:1px solid grey;">SEND</div>
                      </div>
                  </div>
             </div>
@@ -65,7 +66,7 @@ export default {
    display:flex;
    justify-content: center;
    align-items:center;
- animation: myfirst2 4s linear 0.1s infinite alternate; 
+   animation: myfirst2 4s linear 0.1s infinite alternate; 
   border-radius:50%;
   
 }
@@ -82,6 +83,7 @@ export default {
  
    
 }
+
 
  @keyframes myfirst2 {
   0%   {background-color:rgb(255, 141, 11);}
