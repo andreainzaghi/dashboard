@@ -24,7 +24,7 @@
               </div>
                  <div style="width:calc(100% - 30px);border:1px solid lightgrey;margin-top:10px;position:absolute;bottom:15px;right:15px;left:15px;padding:10px;background-color:lightgrey;">
                   
-                     <div style="display:flex;align-items:center;">
+                     <div style="display:flex;align-items:center;"  @keyup.enter="SendMessage()">
                          <input v-model="messagemail"  type="text" style="background-color:#fff;width:100%; border-bottom-left-radius:50px; border-top-left-radius:50px;font-size:12px;padding:10px;border:none;outline:none;border:1px solid grey;" placeholder="In che modo possiamo esserti utili?">
                          <div @click="SendMessage()" style="cursor:pointer; border-bottom-right-radius:50%; background-color:#22AB6E;color:#fff; border-top-right-radius:50%;font-size:12px;padding:10px;border:none;outline:none;border-right:1px solid grey;border-top:1px solid grey;border-bottom:1px solid grey;">SEND</div>
                      </div>
@@ -67,16 +67,14 @@ export default {
   },
    methods:{
      SendMessage(){
-        
            var dayjs = require('dayjs')
            if (this.messagemail !== ''){
            this.messge.push({
-             date: dayjs().format('DD/MM/YY HH.MM'),
-            message: this.messagemail,
-            status: 'sent1'
+              date: dayjs().format('DD/MM/YY HH.MM'),
+              message: this.messagemail,
+              status: 'sent1'
             });
-         this.messagemail = '';
-
+           this.messagemail = '';
     }
      },
      OpenMail() {
