@@ -38,7 +38,7 @@
          
        </ul>
      </div>
-     <div style="position:fixed;right:40px;bottom:30px;">
+     <div style="position:fixed;right:40px;bottom:30px;z-index:4444;">
        <Mail/>
      </div>
       <div style="display:flex;width:100%;padding:0%;height:calc(100vh - 71px);">
