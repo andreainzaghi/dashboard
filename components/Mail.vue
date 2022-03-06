@@ -10,7 +10,7 @@
                 </div>
                 <div style="width:100%;border:1px solid lightgrey;"> </div>
         
-                <div style="overflow:scroll;width:100%;height:325px;padding:1px;">
+                <div style="overflow:scroll;width:100%;height:325px;padding:1px;" id="chatbg">
                   <div  v-for="element in messge"  :key="element.id" >
                     <div v-if="element.status == 'sent'"  id="backmessage">
                         <p >{{element.message}}</p>
@@ -38,10 +38,37 @@
     </div>
 </template>
 <style scoped>
+#chatbg{
+    background-image:url('/img/nuvole.jpg');
+  background-position-x:0px;
+
+  background-size: 320px;
+}
 #exitid:hover{
     background:#F48A39;
     color:#fff;
 
+}
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px grey; 
+  border-radius: 0px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
 }
 
 </style>
