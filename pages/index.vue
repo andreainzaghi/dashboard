@@ -2,17 +2,17 @@
   <div>
     <div>
       <h3>COMPLETA  LA TUA REGISTRAZIONE</h3>
-      <p style="margin:15px 0;">Per abilitare le funzioni di investimento e poter ricevere il denaro è necessario completare la tua iscrizione inserendo informazioni aggiuntive. Premi <b @click="dateRangeText()" style="cursor:pointer;">ATTIVA ORA</b>  per visualizzare i dati ed i documenti necessari per completare la registrazione.</p>
-      <div v-if="!openform && second" style="margin-bottom:15px;">
+      <p style="margin:15px 0;border-bottom:1px solid lightgrey;padding:5px 0;">Per abilitare le funzioni di investimento e poter ricevere il denaro è necessario completare la tua iscrizione inserendo informazioni aggiuntive. Premi <b @click="dateRangeText()" style="cursor:pointer;">ATTIVA ORA</b>  per visualizzare i dati ed i documenti necessari per completare la registrazione.</p>
+      <div v-if="!openform && second " style="margin-bottom:15px;" id="repeat">
               <div style=" color:grey;text-shadow:1px 1px 1px #fff;">REPEAT :</div>
               <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Nome : <b>{{message}}</b></div>
-              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Cognome :<b>{{message1}}</b></div>
-              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Eta' :<b>{{message2}}</b></div>
-              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Telefono :<b>{{message3}}</b></div>
-              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Nazionalita' :<b>{{message4}}</b></div>
-              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Codice Fiscale :<b>{{message5}}</b></div>
-              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Citta' :<b>{{message6}}</b></div>
-              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Indirizzo :<b>{{message7}}</b></div>
+              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Cognome : <b>{{message1}}</b></div>
+              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Eta' : <b>{{message2}}</b></div>
+              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Telefono : <b>{{message3}}</b></div>
+              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Nazionalita' : <b>{{message4}}</b></div>
+              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Codice Fiscale : <b>{{message5}}</b></div>
+              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Citta' : <b>{{message6}}</b></div>
+              <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Indirizzo : <b>{{message7}}</b></div>
               <div style=" color:grey;text-shadow:1px 1px 1px #fff;"><button @click="dateRangeText()" id="linky">MODIFICA DATI :</button></div>
           </div>
       <div style="" id="containerprincipe">
@@ -35,7 +35,7 @@
         </div>
          <div v-if="second" style="display:flex;width:100%;justify-content:center;align-items:center;font-weight:bold;">
             
-        <div class="payment" v-if="cartadicredito">
+        <div class="payment" v-if="cartadicredito && !errormess">
          
               <div class="bg"></div>
               <div class="card">
@@ -152,6 +152,7 @@ color:#fff;
 {
 	padding: 40px;
 	transform: translateY(0);
+  
 }
 .payment .bg
 {
@@ -161,6 +162,7 @@ color:#fff;
 	width: 100%;
 	border-radius: 25px;
 	background: linear-gradient(225deg,#ea222cc3,#FED090);
+  
 }
 .payment .card
 {
@@ -323,7 +325,8 @@ export default {
       this.finish=true;
         const linea1 = document.querySelector('#containerprincipe')
           linea1.style.display='none';
-        
+         const linea55 = document.querySelector('#repeat')
+          linea55.style.display='none';
                
      },
      click(){
