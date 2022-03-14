@@ -56,7 +56,7 @@ svg{
   padding:20px;
  
   height:200px;
-  width:30%;
+  width:32%;
   border-radius:10px;
   transition: 0.2s;
 }
@@ -69,7 +69,7 @@ svg{
 
   background-color:#f48a39;
   background-image:url('/img/pigs.png');
-  background-position-x:200px;
+  background-position-x:180px;
   background-position-y:25px;
   background-size: 230px;
 }
@@ -77,7 +77,7 @@ svg{
 
   background-color:#f48a39;
    background-image:url('/img/weedorange.png');
-  background-position-x:220px;
+  background-position-x:200px;
   background-position-y:-10px;
    background-size: 230px;
 }
@@ -85,7 +85,7 @@ svg{
 
   background-color:#f48a39;
    background-image:url('/img/moneyrain.png');
-  background-position-x:60px;
+  background-position-x:50px;
   background-position-y:5px;
    background-size: 280px;
 }
