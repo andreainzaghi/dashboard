@@ -34,7 +34,7 @@
               <div style=" color:grey;text-shadow:1px 1px 1px #fff;">Indirizzo :<b>{{message7}}</b></div>
               <div style=" color:grey;text-shadow:1px 1px 1px #fff;"><button @click="dateRangeText()" id="linky">MODIFICA DATI :</button></div>
           </div>
-        <div class="payment">
+        <div class="payment" v-if="cartadicredito">
          
               <div class="bg"></div>
               <div class="card">
@@ -303,7 +303,8 @@ export default {
              errormess:false,
              first:false,
              second:false,
-             finish:false
+             finish:false,
+             cartadicredito:true
              
      
     }
@@ -314,17 +315,20 @@ export default {
         this.first=true;
         const linea1 = document.querySelector('#containerprincipe')
           linea1.style.height='450px';
+          this.cartadicredito=false;
                
      },
       completa() {
       this.finish=true;
         const linea1 = document.querySelector('#containerprincipe')
           linea1.style.display='none';
+        
                
      },
      click(){
         const linea1 = document.querySelector('#containerprincipe')
           linea1.style.height='650px';
+            this.cartadicredito=true;
            
        if(this.message && this.message1 && this.message2 && this.message3 && this.message4 && this.message5 && this.message6 && this.message7){
           this.openform=false

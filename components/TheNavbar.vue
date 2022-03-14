@@ -65,7 +65,7 @@
      
               <div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" version="1.1" class="svg replaced-svg">
-                <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+              
                 <title>icon-settings</title>
                 <desc>Created with Sketch.</desc>
                 <g id="icon-settings" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -118,6 +118,18 @@ svg{
   width:20px;
  margin-right:10px;
 }
+svg:hover{
+transform:rotate(0deg);
+  animation: myfirst66 0.5s linear 0.01s infinite alternate;
+  
+}
+@keyframes myfirst66 {
+  0%  {transform:rotate(0deg);}
+  33% {transform:rotate(10deg);}
+  67% {transform:rotate(0deg);}
+ 
+  100% {transform:rotate(-10deg);}
+}
 #navbar{
   background-color:#F48A39;
   width:100%;
@@ -142,7 +154,7 @@ svg{
    list-style: none;
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
    text-decoration: none;
-   font-size:20px;
+   font-size:17px;
 }
    ul li{
  color:#fff;

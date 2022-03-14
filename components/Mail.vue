@@ -8,7 +8,7 @@
                    <h3>Assistenza</h3> 
                    <h5>Offline icon Offline</h5>
                 </div>
-                <div style="width:100%;border:1px solid lightgrey;"> </div>
+                <!-- <div style="width:100%;border:1px solid lightgrey;"> </div> -->
         
                 <div style="overflow:scroll;width:100%;height:325px;padding:1px;padding:0 10px;" id="chatbg">
 

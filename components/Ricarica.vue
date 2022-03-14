@@ -48,7 +48,7 @@
               <div>CONTO VIRTUALE CLIENTE NON ABILITATO</div>
               <div @click="ContoVirtuale2()" style="width:55px;border:1px solid grey;padding:3px 10px;" id="red-button">EXIT</div>
           </div>
-          <div>
+          <div style="font-size:14px;">
               Per poter abilitare il tuo conto virtuale è necessario caricare il documento d’identità tramite la tua Dashboard
           </div>
            <div @click="ContoVirtuale2()" style="width:90px;border:1px solid grey;padding: 3px 10px;margin-top:10px;" id="red-button">ANNULLA</div>

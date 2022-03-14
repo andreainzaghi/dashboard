@@ -7,7 +7,7 @@
             </div>
             <div>
                 <img src="img/ddd.png" alt="">
-                <p>Il processo di pagamento è garantito da Lemon Way, istituto di pagamento online.
+                <p style="font-size:15px;">Il processo di pagamento è garantito da Lemon Way, istituto di pagamento online.
                     Recrowd è agente di pagamento autorizzato dall’Istituto di Pagamento Lemonway con ACPR N° 2019071202</p>
             </div>
             <div>
